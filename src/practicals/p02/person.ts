@@ -1,5 +1,5 @@
 export class Person {
-    private age?:number
+    private age:number = 0
     firstname?:string
     lastname?:string
     static COUNTRY:string = 'Thailand'
