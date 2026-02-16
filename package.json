@@ -2,7 +2,7 @@
   "name": "typescript-oop-quiz-3-sec35",
   "version": "1.0.0",
   "description": "TypeScript OOP Quiz 3 Section 35",
-  "type": "module",
+  "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
