@@ -8,7 +8,7 @@ export class Person {
         return this.firstname + " " + this.lastname
     }
     setAge(age:number){
-        this.age = age
+        return this.age = age
     }
     getAge(){
         return this.age
