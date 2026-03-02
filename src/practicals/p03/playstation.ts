@@ -11,13 +11,13 @@ export class Playstation extends Product {
     this.gen = 'Gen' + ' ' + generation
     this.price = price
   }
-  
+
   getProfile(){
     return this.playname + ' ' + '(' + this.gen + ')'
   }
 
   getDiscountPrice(){
-    return this.price = this.price - (this.price * Playstation.DISCOUNT_PERCENT)/100
+    return this.price = this.price - (this.price * Product.DISCOUNT_PERCENT)/100
   }
 
 
