@@ -14,7 +14,7 @@ product.setPrice(1000)
 console.log(product.getPrice())
 // 1000
 
-const ps = new Playstation('PS5', 5, 17990)
+const ps = new Playstation('PS5', 4, 17990)
 
 console.log(ps.getProfile())
 // PS5 (Gen 5)
