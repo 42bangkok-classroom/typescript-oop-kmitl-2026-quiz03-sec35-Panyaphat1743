@@ -6,7 +6,7 @@ export class Product {
         if(price){
             this.price = price
         }else{
-            this.price = 0
+            this.price= 0
         }
         this.name = name
     }
