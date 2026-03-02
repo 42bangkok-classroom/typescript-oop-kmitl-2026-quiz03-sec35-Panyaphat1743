@@ -14,6 +14,7 @@ export class Product {
     getPrice(){
         return this.price
     }
+    
     setPrice(price: number){
         return this.price = price
     }
