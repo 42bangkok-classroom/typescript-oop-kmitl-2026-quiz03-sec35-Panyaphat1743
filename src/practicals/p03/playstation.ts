@@ -2,18 +2,18 @@ import { Product } from './product'
 
 export class Playstation extends Product {
   playname:string
-  generation:number
+  gen:number
   price:number
   constructor(name:string,generation:number,price:number){
     super(name)
     this.playname = name
-    this.generation = generation
+    this.gen = generation
     this.price = price
   }
 
 
   getProfile(){
-    return this.playname + ' ' + '('  +  'Gen ' + this.generation + ')'
+    return this.playname + ' ' + '('  +  'Gen ' + this.gen + ')'
   }
 
   getDiscountPrice(){
