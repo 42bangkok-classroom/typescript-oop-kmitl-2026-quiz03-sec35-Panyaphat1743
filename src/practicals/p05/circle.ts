@@ -13,6 +13,6 @@ export class Circle extends Shape {
         console.log('Drawing a ' + this.color + ' circle with radius ' + this.radius)
     }
     getArea():number{
-        return 3.14* (this.radius)**2
+        return Math.PI * (this.radius)**2
     }
 }
