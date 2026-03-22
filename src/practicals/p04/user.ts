@@ -13,7 +13,7 @@ export class User {
     }
     
     login(pass:string):boolean{
-        User.LOGIN_ATTEMPTS += 1
+        User.LOGIN_ATTEMPTS = User.LOGIN_ATTEMPTS + 1
         if(this.validatePassword(pass)){
             return true
         }else{
