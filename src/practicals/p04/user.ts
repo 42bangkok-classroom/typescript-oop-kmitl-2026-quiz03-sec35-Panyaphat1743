@@ -1,7 +1,7 @@
 export class User {
     username:string
     private password:string
-    private LOGIN_ATTEMPTS:number = 0
+    private static LOGIN_ATTEMPTS:number = 0
     
     constructor(name:string,pass:string){
         this.username = name
@@ -13,7 +13,7 @@ export class User {
     }
     
     login(pass:string):boolean{
-        this.LOGIN_ATTEMPTS = this.LOGIN_ATTEMPTS + 1
+        User.LOGIN_ATTEMPTS += 1
         if(this.validatePassword(pass)){
             return true
         }else{
@@ -30,7 +30,7 @@ export class User {
     }
 
     getLoginAttempts():number{
-        return this.LOGIN_ATTEMPTS
+        return User.LOGIN_ATTEMPTS
     }
 
 }
