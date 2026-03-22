@@ -9,7 +9,6 @@ export class Rectangle extends Shape{
         this.width = wid
         this.height = hei
     }
-    Rectangle(color:string,width:number,height:number){}
     draw():void{
         console.log('Drawing a ' + this.color + ' rectangle with width ' + this.width + ' and height ' + this.height)
     }

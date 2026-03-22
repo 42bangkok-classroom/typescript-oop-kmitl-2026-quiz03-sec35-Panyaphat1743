@@ -8,7 +8,6 @@ export class Circle extends Shape {
         this.radius = rad
         }
 
-    Circle(color:string,radius:number){}
     draw():void{
         console.log('Drawing a ' + this.color + ' circle with radius ' + this.radius)
     }
