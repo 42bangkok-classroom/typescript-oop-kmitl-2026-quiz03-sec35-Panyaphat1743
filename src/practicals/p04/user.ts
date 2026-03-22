@@ -1,8 +1,7 @@
 export class User {
     username:string
     private password:string
-    private static LOGIN_ATTEMPTS:number
-    count:number = 0
+    private static LOGIN_ATTEMPTS:number = 0
     
     constructor(name:string,pass:string){
         this.username = name
@@ -13,22 +12,26 @@ export class User {
         console.log(this.password = password)
     }
     
-    login(password:string):boolean{
-        if(password === 'secret123'){
-            this.count += 1
+    login(pass:string):boolean{
+        if(this.validatePassword(pass)){
             return true
         }else{
-            this.count += 1
             return false
         }
     }
 
-    private validatePassword(password:string):boolean{
-        if()
+    private validatePassword(pass:string):boolean{
+        if(pass === this.password){
+            User.LOGIN_ATTEMPTS += 1
+            return true
+        }else{
+            User.LOGIN_ATTEMPTS += 1
+            return false
+        }
     }
 
     getLoginAttempts():number{
-        return this.count
+        return User.LOGIN_ATTEMPTS
     }
 
 }
