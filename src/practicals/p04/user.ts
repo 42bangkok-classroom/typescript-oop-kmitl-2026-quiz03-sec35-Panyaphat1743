@@ -9,7 +9,8 @@ export class User {
         this.password = pass
     }
     User(username:string,password:string){
-        
+        console.log(this.username = username)
+        console.log(this.password = password)
     }
     
     login(password:string):boolean{
@@ -23,7 +24,7 @@ export class User {
     }
 
     private validatePassword(password:string):boolean{
-        return true
+        if()
     }
 
     getLoginAttempts():number{
