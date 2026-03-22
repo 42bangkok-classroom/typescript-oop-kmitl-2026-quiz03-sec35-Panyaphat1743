@@ -13,6 +13,7 @@ export class User {
     }
     
     login(pass:string):boolean{
+        User.LOGIN_ATTEMPTS += 1
         if(this.validatePassword(pass)){
             return true
         }else{
@@ -22,10 +23,8 @@ export class User {
 
     private validatePassword(pass:string):boolean{
         if(pass === this.password){
-            User.LOGIN_ATTEMPTS += 1
             return true
         }else{
-            User.LOGIN_ATTEMPTS += 1
             return false
         }
     }
